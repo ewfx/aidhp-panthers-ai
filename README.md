@@ -1,60 +1,51 @@
-# 🚀 Project Name
+# GenAI Recommendations System
 
-## 📌 Table of Contents
-- [Introduction](#introduction)
-- [Demo](#demo)
-- [Inspiration](#inspiration)
-- [What It Does](#what-it-does)
-- [How We Built It](#how-we-built-it)
-- [Challenges We Faced](#challenges-we-faced)
-- [How to Run](#how-to-run)
-- [Tech Stack](#tech-stack)
-- [Team](#team)
+This project demonstrates the generation of customer data and their inquiries using the Faker library. The generated data is then used to create a recommendation system using ChromaDB and LangChain.
 
----
+## Files
 
-## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+- `GenAI_Recommendations.ipynb`: Jupyter notebook containing the code to generate customer data and build the recommendation system.
+- `products_info.csv`: CSV file containing the generated customer data.
 
-## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
-🖼️ Screenshots:
+## Setup
 
-![Screenshot 1](link-to-image)
+1. Install the required libraries:
+    ```bash
+    pip install faker pandas numpy chromadb langchain langchain-community langchain-core transformers sentence-transformers bitsandbytes accelerate streamlit openai
+    ```
 
-## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+2. Open the `GenAI_Recommendations.ipynb` file in Jupyter Notebook or JupyterLab.
 
-## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+## Usage
 
-## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+1. Run the cells in the notebook sequentially to generate the customer data and build the recommendation system.
+2. The generated data will be saved in the `products_info.csv` file.
 
-## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+## Data Description
 
-## 🏃 How to Run
-1. Clone the repository  
-   ```sh
-   git clone https://github.com/your-repo.git
-   ```
-2. Install dependencies  
-   ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
-   ```
-3. Run the project  
-   ```sh
-   npm start  # or python app.py
-   ```
+### Customer Data
+- `Customer ID`: Unique identifier for the customer.
+- `Age`: Age of the customer.
+- `Gender`: Gender of the customer.
+- `Marital Status`: Marital status of the customer.
+- `Income Level`: Income level of the customer.
+- `Education`: Education level of the customer.
+- `Occupation`: Occupation of the customer.
+- `Residential Status`: Residential status of the customer.
+- `Dependents`: Number of dependents.
+- `Debt-to-Income`: Debt-to-income ratio.
+- `Credit_Bureau`: Credit bureau score.
 
-## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+### Inquiries
+- `last_3months_personal_loan_inq`: Whether the customer made a personal loan inquiry in the last 3 months.
+- `last_3months_credit_card_inq`: Whether the customer made a credit card inquiry in the last 3 months.
+- `last_3months_mortgage_inq`: Whether the customer made a mortgage inquiry in the last 3 months.
+- `last_6months_personal_loan_inq`: Whether the customer made a personal loan inquiry in the last 6 months.
+- `last_6months_credit_card_inq`: Whether the customer made a credit card inquiry in the last 6 months.
+- `last_6months_mortgage_inq`: Whether the customer made a mortgage inquiry in the last 6 months.
+
+## License
+
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **Poonam** - [GitHub](#) | [LinkedIn](#)
